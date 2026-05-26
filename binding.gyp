@@ -5,13 +5,13 @@
       "<(module_root_dir)/.gitmodules",
     ],
     "libnode_inputs": [
-      "<!@(node -p \"require('glob').sync('node/**/*.*(h|cc|S)', {ignore:'node/out/**'}).join(' ');\")",
+      "<!@(node -p \"require('glob').sync('node/**/*.*(h|cc|S)', {ignore:'node/out/**'}).map(p => p.replace(/\\\\/g, '/')).join(' ');\")",
     ],
     "module_inputs": [
-      "<!@(node -p \"require('glob').sync('src/**/*.*(h|cc)').join(' ');\")",
+      "<!@(node -p \"require('glob').sync('src/**/*.*(h|cc)').map(p => p.replace(/\\\\/g, '/')).join(' ');\")",
     ],
     "gyp_inputs": [
-      "<!@(node -p \"require('glob').sync('.gyp/**/*.*(js|py)').join(' ');\")",
+      "<!@(node -p \"require('glob').sync('.gyp/**/*.*(js|py)').map(p => p.replace(/\\\\/g, '/')).join(' ');\")",
     ],
   },
   "targets": [
