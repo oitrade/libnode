@@ -1,22 +1,21 @@
 {
-  "name": "@loobins/libnode",
+  "name": "@oitrade/libnode",
   "author": {
-    "name": "loobins",
-    "email": "info@itrading.link"
+    "name": "oitrade",
+    "email": "info@oitrade.link"
   },
   "version": "24.15.0",
   "description": "Build shared node lib",
   "license": "Apache-2.0",
   "main": "src/js/index.js",
   "repository": {
-    "url": "https://github.com/loobins/libnode.git"
+    "url": "https://github.com/oitrade/libnode.git"
   },
   "binary": {
     "module_name": "link_node",
     "module_path": "dist/node",
     "remote_path": "libnode/v{major}/v{version}",
-    "package_name": "libnode-v{version}-{platform}-{arch}-{configuration}.tar.gz",
-    "host": "https://prebuilt.loobins.cc"
+    "package_name": "libnode-v{version}-{platform}-{arch}-{configuration}.tar.gz"
   },
   "scripts": {
     "preinstall": "node .gyp/node-npm-config.js",
