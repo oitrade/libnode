@@ -1,3 +1,6 @@
+output/
+__pycache__/
+.gyp/__pycache__/
 node/
-build/
 node_modules/
+build/
