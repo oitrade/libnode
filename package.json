@@ -15,7 +15,8 @@
     "module_name": "link_node",
     "module_path": "dist/node",
     "remote_path": "libnode/v{major}/v{version}",
-    "package_name": "libnode-v{version}-{platform}-{arch}-{configuration}.tar.gz"
+    "package_name": "libnode-v{version}-{platform}-{arch}-{configuration}.tar.gz",
+    "host":"https://localhost/"
   },
   "scripts": {
     "preinstall": "node .gyp/node-npm-config.js",

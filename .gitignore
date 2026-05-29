@@ -116,3 +116,4 @@ build/
 build-*/
 cmake-build-debug/
 dist/
+output/
